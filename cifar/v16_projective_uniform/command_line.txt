@@ -1,0 +1,1 @@
+python classification.py --epochs 100 --schedule 20 40 45 50 --gamma 0.2 -c ./clf_translate0_epoch100 --net "/home/liheng/transform_prediction/v8_translation/translate0/net_epoch_99.pth" --gpu-id 2
