@@ -6,6 +6,22 @@ The success of deep neural networks often relies on a large amount of labeled ex
 
 ## Formulation
 
+| ![AED](https://github.com/maple-research-lab/AET/blob/master/resource/AED.png) |
+|:--:| 
+| *(a) Auto-Encoding Data* |
+| ![AET](https://github.com/maple-research-lab/AET/blob/master/resource/AET.png) |
+| *(b) Auto-Encoding Transformation* |
+| *Figure 1. An illustration of the comparison betweeen AED and AET models. AET attempts to estimate the input transformation rather than the data at the output end. This forces the encoder network E to extract the features that contain the sufficient information about visual structures to decode the input transformation.* |
+
+Figure 1 illustrates our idea of auto-encoding transformation (AET) in comparison with the conventional auto-encoding data (AED). We build a transformation decoder D to reconstruct the input transformation t from the representations of an original image E(x) and the transformed image E(t(x)), where E is the representation encoder. 
+
+The least-square difference between the estimated transformation and the original transformation is minimized to train D and E jointly. For details, please refer to [our paper](https://arxiv.org/abs/1901.04596).
+
+## Run our codes
+
+### Cifar10
+
+### ImageNet 
 
 ## Citation
 
