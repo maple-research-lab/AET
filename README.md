@@ -27,3 +27,13 @@ The least-square difference between the estimated transformation and the origina
 
 Liheng Zhang, Guo-Jun Qi, Liqiang Wang, Jiebo Luo. AET vs. AED: Unsupervised Representation Learning by Auto-Encoding Transformations rather than Data,  in Proceedings of IEEE Conference on Computer Vision and Pattern Recognition (CVPR 2019), Long Beach, CA, June 16th - June 20th, 2019. [[pdf](https://arxiv.org/abs/1901.04596)]
 
+## Disclaimer
+
+Some of our codes reuse the github project [FeatureLearningRotNet](https://github.com/gidariss/FeatureLearningRotNet).  
+
+## License
+
+This code is released under the MIT License.
+
+
+
