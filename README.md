@@ -24,15 +24,39 @@ The least-square difference between the estimated transformation and the origina
 or
 
     cd cifar/projective
-Unsupervised Learning:
+Unsupervised learning:
 
     CUDA_VISIBLE_DEVICES=0 python main.py --cuda --outf ./output --dataroot $YOUR_CIFAR10_PATH$ 
-
-Supervised Evaluation with two FC layers:
+Supervised evaluation with two FC layers:
 
     python classification.py --dataroot $YOUR_CIFAR10_PATH$ --epochs 200 --schedule 100 150 --gamma 0.1 -c ./output_cls --net ./output/net_epoch_1499.pth --gpu-id 0
 
 ### ImageNet 
+    cd imagenet
+Generate and save 0.5 million projective transformation parameters:
+
+    python save_homography.py
+Unsupervised learning:
+
+    CUDA_VISIBLE_DEVICES=0 python main.py --exp ImageNet_Unsupervised
+Supervised evaluation with non-linear classifiers:
+
+    CUDA_VISIBLE_DEVICES=0 python main.py --exp ImageNet_NonLinearClassifiers
+Supervised evaluation with linear classifiers (max pooling):
+
+    CUDA_VISIBLE_DEVICES=0 python main.py --exp ImageNet_LinearClassifiers_Maxpooling
+Supervised evaluation with linear classifiers (average pooling):
+
+    CUDA_VISIBLE_DEVICES=0 python main.py --exp ImageNet_LinearClassifiers_Avgpooling   
+
+### Places205
+Firstly pretrain the model on Imagenet, then evalutate the model with linear classifiers (max pooling):
+
+    CUDA_VISIBLE_DEVICES=0 python main.py --exp Places205_LinearClassifiers_Maxpooling
+    
+Supervised evalutation with linear classifiers (average pooling):
+
+    CUDA_VISIBLE_DEVICES=0 python main.py --exp Places205_LinearClassifiers_Avgpooling
 
 ## Citation
 
