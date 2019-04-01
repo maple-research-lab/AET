@@ -18,7 +18,11 @@ Figure 1 illustrates our idea of auto-encoding transformation (AET) in compariso
 The least-square difference between the estimated transformation and the original transformation is minimized to train D and E jointly. For details, please refer to [our paper](https://arxiv.org/abs/1901.04596).
 
 ## Run our codes
-
+### Requirements
+- Python == 2.7
+- pytorch == 1.0.1
+- torchvision == 0.2.1
+- PIL == 5.4.1
 ### Cifar10
     cd cifar/affine
 or
