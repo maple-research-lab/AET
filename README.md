@@ -23,6 +23,8 @@ The least-square difference between the estimated transformation and the origina
 - pytorch == 1.0.1
 - torchvision == 0.2.1
 - PIL == 5.4.1
+### Note
+Please use the torchvision with version 0.2.1. The code does not support the newest version of torchvision.
 ### Cifar10
     cd cifar/affine
 or
