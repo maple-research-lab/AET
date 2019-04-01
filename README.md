@@ -25,9 +25,11 @@ or
 
     cd cifar/projective
 Unsupervised Learning:
+
     CUDA_VISIBLE_DEVICES=0 python main.py --cuda --outf ./output --dataroot $YOUR_CIFAR10_PATH$ 
 
 Supervised Evaluation with two FC layers:
+
     python classification.py --dataroot $YOUR_CIFAR10_PATH$ --epochs 200 --schedule 100 150 --gamma 0.1 -c ./output_cls --net ./output/net_epoch_1499.pth --gpu-id 0
 
 ### ImageNet 
