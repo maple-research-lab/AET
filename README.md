@@ -53,7 +53,15 @@ Supervised evaluation with linear classifiers (max pooling):
     CUDA_VISIBLE_DEVICES=0 python main.py --exp ImageNet_LinearClassifiers_Maxpooling
 Supervised evaluation with linear classifiers (average pooling):
 
-    CUDA_VISIBLE_DEVICES=0 python main.py --exp ImageNet_LinearClassifiers_Avgpooling   
+    CUDA_VISIBLE_DEVICES=0 python main.py --exp ImageNet_LinearClassifiers_Avgpooling
+
+To use the pretrained ImageNet model:
+
+    mkdir experiments
+    cd experiments
+    mkdir ImageNet_Unsupervised
+
+Please download the pre-trained model from the link: https://1drv.ms/u/s!AhnMU9glhsl-xxBYrsQuOUHsdwYw?e=recPuk and put the models under ./experiments/ImageNet_Unsupervised
 
 ### Places205
 Firstly pretrain the model on Imagenet, then evalutate the model with linear classifiers (max pooling):
