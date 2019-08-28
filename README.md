@@ -61,7 +61,7 @@ To use the pretrained ImageNet model:
     cd experiments
     mkdir ImageNet_Unsupervised
 
-Please download the pre-trained model from the link: https://1drv.ms/u/s!AhnMU9glhsl-xxBYrsQuOUHsdwYw?e=recPuk and put the models under ./experiments/ImageNet_Unsupervised
+Please download the pre-trained model from the link: https://1drv.ms/u/s!AhnMU9glhsl-xxI-e68xrOe3gvQg?e=nFNnir and put the models under ./experiments/ImageNet_Unsupervised
 
 ### Places205
 Firstly pretrain the model on Imagenet, then evalutate the model with linear classifiers (max pooling):
